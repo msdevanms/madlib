@@ -87,10 +87,10 @@ coxph_train( source_table,
                 <td>INTEGER. The number of iterations performed by the optimizer.</td>
             </tr>
         </table>
-    </dd>
-    <dd> Additionally, a summary output table is generated that contains
+    
+    Additionally, a summary output table is generated that contains
     a summary of the parameters used for building the Cox model. It is stored
-    in a table named <output_table>_summary. It has the following columns:
+    in a table named \<output_table\>_summary. It has the following columns:
     <table class="output">
         <tr>
             <th>source_table</th>
@@ -196,7 +196,7 @@ Additionally, the residual values are outputted to the table named <em>output_ta
 The table contains the following columns:
         <table class="output">
             <tr>
-                <th><dep_column_name></th>
+                <th>\<dep_column_name\></th>
                 <td>FLOAT8. Time values (dependent variable) present in the original source table. </td>
             </tr>
             <tr>
@@ -265,7 +265,7 @@ COPY sample_data FROM STDIN DELIMITED BY '|';
  22 |   1 | 4.01 |         3 | t
  23 |   1 | 4.91 |         2 | t
  24 |   1 |    5 |         1 | t
-\.
+\\.
 </pre>
 -# Run the Cox regression function.
 <pre class="example">
@@ -501,8 +501,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 ----------------------------------------------------------------------
 
 /**
-  * @brief Cox regresison training function
- */
+  * @brief Cox regression training function
+  */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.coxph_train(
      source_table           VARCHAR     -- name of input  table
    , output_table           VARCHAR     -- name of output table
@@ -520,7 +520,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /**
   * @brief Cox regresison training function
- */
+  */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.coxph_train(
      source_table               VARCHAR       -- name of input  table
    , output_table               VARCHAR       -- name of output table
@@ -537,7 +537,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /**
   * @brief Cox regresison training function
- */
+  */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.coxph_train(
      source_table               VARCHAR       -- name of input  table
    , output_table                  VARCHAR       -- name of output table
@@ -561,7 +561,7 @@ Columns of the matrix contain the correlation coefficient between transformed , 
     - <tt>rho FLOAT8[]</tt> - Array of correlation coefficient between survival time and the scaled Schoenfeld residuals
     - <tt>chi_square FLOAT8[]</tt> - Chi-square test statistic for the
     - <tt>p_value FLOAT8[]</tt> - Two-side p-value for the chi-square test
-*/
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.cox_zph
 (
     coxph_model_table  VARCHAR,
@@ -927,7 +927,7 @@ CREATE AGGREGATE MADLIB_SCHEMA.__coxph_resid_stat_agg(
 
 /**
   * @brief Cox regresison training function
- **/
+  */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.cox_prop_hazards(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -955,7 +955,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /**
   * @brief Cox regresison training function
- **/
+  */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.cox_prop_hazards(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table

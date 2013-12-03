@@ -497,7 +497,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `CONTAINS SQL', `');
  * @param grouping_cols Set of columns to group by.
  * @param marginal_vars Subset of independent variables to calculate marginal effects for.
  * @param max_iter Maximum number of iterations
- * @param optimzer Optimizer to be used (newton/irls, cg or idg)
+ * @param optimizer Optimizer to be used (newton/irls, cg or idg)
  * @param tolerance Resiual tolerance
  * @param verbose_mode Verbose mode (on/off)
  *
@@ -545,8 +545,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 --------------------------------------
 
 /**
-  * @brief Marginal effects with default variables
- **/
+ * @brief Marginal effects with default variables
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_logregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -562,8 +562,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 --------------------------------------
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_logregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -580,8 +580,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 --------------------------------------
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_logregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -599,8 +599,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 --------------------------------------
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_logregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -619,8 +619,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 --------------------------------------
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_logregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -640,8 +640,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 --------------------------------------
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_logregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -772,7 +772,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `CONTAINS SQL', `');
  * @param grouping_cols Set of columns to group by.
  * @param marginal_vars Subset of independent variables to calculate marginal effects for.
  * @param max_iter Maximum number of iterations
- * @param optimzer Optimizer to be used (newton/irls, cg or idg)
+ * @param optimizer Optimizer to be used (newton/irls, cg or idg)
  * @param tolerance Resiual tolerance
  * @param verbose_mode Verbose mode (on/off)
  *
@@ -913,8 +913,8 @@ $$ LANGUAGE plpgsql VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_mlogregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -944,8 +944,8 @@ $$ LANGUAGE plpgsql VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_mlogregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -977,8 +977,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_mlogregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -1017,8 +1017,8 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 ------------------------------------------------------------------------------
 
 /**
-  * @brief Marginal effects with default variables
- **/
+ * @brief Marginal effects with default variables
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_mlogregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -1034,8 +1034,8 @@ $$ LANGUAGE sql VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /**
-  * @brief Marginal effects with default variables
- **/
+ * @brief Marginal effects with default variables
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_mlogregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -1052,8 +1052,8 @@ $$ LANGUAGE sql VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_mlogregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
@@ -1070,8 +1070,8 @@ $$ LANGUAGE sql VOLATILE
 m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `MODIFIES SQL DATA', `');
 
 /**
-  * @brief Marginal effects with default variable_names
- **/
+ * @brief Marginal effects with default variable_names
+ */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.margins_mlogregr(
      source_table               VARCHAR       -- name of input  table
    , out_table                  VARCHAR       -- name of output table
